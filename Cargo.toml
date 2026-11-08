@@ -1,0 +1,13 @@
+[package]
+name = "aster-deriva"
+version = "1.0.0"
+edition = "2024"
+
+[dependencies]
+raylib = "6.0.0"
+font8x8 = "0.3"
+png = "0.17"
+
+[profile.release]
+lto = "thin"
+codegen-units = 1
